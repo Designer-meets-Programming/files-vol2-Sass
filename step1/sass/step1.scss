@@ -1,0 +1,54 @@
+// /////////////////////////////////////////////////////////////////////////////
+// extend
+// /////////////////////////////////////////////////////////////////////////////
+
+.base{
+	width  : 100px;
+	height : 100px;
+}
+
+.ext1{ @extend .base; }
+
+.ext2{
+	background : #000;
+	@extend .base;
+}
+
+// 共通クラス(上の場合は.base)を吐き出したくない・・・
+// というときはplaceholder selector(%)を利用する
+
+%base{
+	width  : 100px;
+	height : 100px;
+}
+.ext3{ @extend %base; }
+
+// /////////////////////////////////////////////////////////////////////////////
+// mixn
+// /////////////////////////////////////////////////////////////////////////////
+
+@mixin myMixin1{
+	width:100px;
+	height:100px;
+}
+
+.mixin1_1{ @include myMixin1; }
+.mixin1_2{ @include myMixin1; }
+
+@mixin myMixin2($col, $pt, $pb:10px){
+	color          : $col;
+	padding-top    : $pt;
+	padding-bottom : $pb;
+}
+
+.mixin2{ @include myMixin2(#000,null); }
+
+// -----------------------------------------------------------------------------
+
+@mixin myMixin3($shadow...){
+	text-shadow : $shadow;
+}
+
+.mixin3{
+	@include myMixin3(0 -1px 1px #FFF, -1px 0 1px #FFF, 1px 0 1px #000);
+}

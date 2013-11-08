@@ -1,0 +1,39 @@
+/* line 5, ../sass/step1.scss */
+.base, .ext1, .ext2 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 12, ../sass/step1.scss */
+.ext2 {
+  background: #000;
+}
+
+/* line 20, ../sass/step1.scss */
+.ext3 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 35, ../sass/step1.scss */
+.mixin1_1 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 36, ../sass/step1.scss */
+.mixin1_2 {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 44, ../sass/step1.scss */
+.mixin2 {
+  color: black;
+  padding-bottom: 10px;
+}
+
+/* line 52, ../sass/step1.scss */
+.mixin3 {
+  text-shadow: 0 -1px 1px white, -1px 0 1px white, 1px 0 1px black;
+}
