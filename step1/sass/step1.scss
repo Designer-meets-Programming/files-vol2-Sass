@@ -28,12 +28,14 @@
 // /////////////////////////////////////////////////////////////////////////////
 
 @mixin myMixin1{
-	width:100px;
-	height:100px;
+	width  : 100px;
+	height : 100px;
 }
 
 .mixin1_1{ @include myMixin1; }
 .mixin1_2{ @include myMixin1; }
+
+// -----------------------------------------------------------------------------
 
 @mixin myMixin2($col, $pt, $pb:10px){
 	color          : $col;
@@ -45,10 +47,29 @@
 
 // -----------------------------------------------------------------------------
 
-@mixin myMixin3($shadow...){
+@mixin myMixin3{
+	width : 100px;
+	@content;
+}
+
+.mixin3_1{
+	@include myMixin3{
+		margin-bottom : 100px;
+	}
+}
+
+.mixin3_2{
+	@include myMixin3{
+		margin-top : 100px;
+	}
+}
+
+// -----------------------------------------------------------------------------
+
+@mixin myMixin4($shadow...){
 	text-shadow : $shadow;
 }
 
-.mixin3{
-	@include myMixin3(0 -1px 1px #FFF, -1px 0 1px #FFF, 1px 0 1px #000);
+.mixin4{
+	@include myMixin4(0 -1px 1px #FFF, -1px 0 1px #FFF, 1px 0 1px #000);
 }
