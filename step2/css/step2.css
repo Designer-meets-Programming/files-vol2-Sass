@@ -1,0 +1,59 @@
+/* line 4, ../sass/step2.scss */
+p {
+  border: 1px solid;
+}
+
+/* line 14, ../sass/step2.scss */
+.item-1 {
+  width: 2em;
+}
+
+/* line 14, ../sass/step2.scss */
+.item-2 {
+  width: 4em;
+}
+
+/* line 14, ../sass/step2.scss */
+.item-3 {
+  width: 6em;
+}
+
+/* line 21, ../sass/step2.scss */
+.puma-icon {
+  background-image: url("/images/puma.png");
+}
+
+/* line 21, ../sass/step2.scss */
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+}
+
+/* line 21, ../sass/step2.scss */
+.egret-icon {
+  background-image: url("/images/egret.png");
+}
+
+/* line 21, ../sass/step2.scss */
+.salamander-icon {
+  background-image: url("/images/salamander.png");
+}
+
+/* line 33, ../sass/step2.scss */
+.func {
+  width: "300px";
+}
+
+/* line 40, ../sass/step2.scss */
+.item-6 {
+  width: 12em;
+}
+
+/* line 40, ../sass/step2.scss */
+.item-4 {
+  width: 8em;
+}
+
+/* line 40, ../sass/step2.scss */
+.item-2 {
+  width: 4em;
+}
